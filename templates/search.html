@@ -26,8 +26,8 @@
 		</thead>
 		<tbody>
 			{{#each books}}
-			<tr>
-				<td nav-to="book" nav-params="{id:'{{id}}'}">{{title}}</td>
+			<tr nav-to="book" nav-params="{id:'{{id}}'}">
+				<td>{{title}}</td>
 				<td>{{authors}}</td>
 				<td>{{published}}</td>
 				<td>{{pages}}</td>
