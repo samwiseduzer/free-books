@@ -1,0 +1,42 @@
+<div id="search">
+	<div id="search-inputs">
+		<label>Title</label><input type="text" id="title-input">
+		<label>Author</label><input type="text" id="author-input">
+		<label>Category</label><input type="text" id="category-input">
+		<button id="search-btn">Search</button>
+	</div>
+	{{#if books.length}}
+	<div id="pagination">
+		{{#if canNext}}
+		<button id="next-page">Next Page</button>
+		{{/if}}
+		{{#if canPrev}}
+		<button id="prev-page">Previous Page</button>
+		{{/if}}
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Authors</th>
+				<th>Published</th>
+				<th>Pages</th>
+				<th>Image</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each books}}
+			<tr>
+				<td nav-to="book" nav-params="{id:'{{id}}'}">{{title}}</td>
+				<td>{{authors}}</td>
+				<td>{{published}}</td>
+				<td>{{pages}}</td>
+				<td><img src="{{image}}" /></td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>
+{{else}}
+<div>Nothing to Show</div>
+{{/if}}

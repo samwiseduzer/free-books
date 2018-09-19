@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Free Books</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+	<script type="text/javascript">
+		google.books.load();
+	</script>
+</head>
+
+<body>
+	<header>
+		<span nav-to="search">Search</span>
+	</header>
+	<router id="content"></router>
+	<footer>
+		<span>&copy; Sam Duzett</span>
+		<span>samuel.duzett@gmail.com</span>
+	</footer>
+	<!-- DEPENDENCIES -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+	<script src="lib/framework.js"></script>
+
+	<!-- IMPLEMENTATION -->
+	<script src="src/search.js"></script>
+	<script src="src/book.js"></script>
+	<script src="src/router.js"></script>
+</body>
+
+</html>
