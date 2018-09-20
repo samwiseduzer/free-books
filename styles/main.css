@@ -120,3 +120,11 @@ table > tbody > tr:hover {
 	box-sizing: border-box;
 	/* Opera/IE 8+ */
 }
+
+#title {
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	margin: auto;
+	font-size: 22px;
+}
