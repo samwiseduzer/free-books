@@ -1,17 +1,17 @@
 <div id="search">
 	<div id="search-inputs">
-		<label>Title</label><input type="text" id="title-input">
-		<label>Author</label><input type="text" id="author-input">
-		<label>Category</label><input type="text" id="category-input">
+		<label>Title: </label><input type="text" id="title-input">
+		<label>Author: </label><input type="text" id="author-input">
+		<label>Category: </label><input type="text" id="category-input">
 		<button id="search-btn">Search</button>
 	</div>
 	{{#if books.length}}
 	<div id="pagination">
-		{{#if canNext}}
-		<button id="next-page">Next Page</button>
-		{{/if}}
 		{{#if canPrev}}
 		<button id="prev-page">Previous Page</button>
+		{{/if}}
+		{{#if canNext}}
+		<button id="next-page">Next Page</button>
 		{{/if}}
 	</div>
 	<table>

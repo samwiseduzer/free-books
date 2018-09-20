@@ -103,6 +103,8 @@ table > tbody > tr:hover {
 #pagination {
 	display: flex;
 	align-items: flex-end;
+	justify-content: flex-end;
+	width: 100%;
 }
 
 /* BOOK */
@@ -127,4 +129,31 @@ table > tbody > tr:hover {
 	justify-self: center;
 	margin: auto;
 	font-size: 22px;
+}
+
+#search-inputs > input {
+	box-shadow: none;
+	border-radius: 4px;
+	border-style: groove;
+	border-color: #eee;
+	outline: none;
+	height: 21px;
+	font: 400 15px system-ui;
+	margin-right: 1em;
+}
+
+button {
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	background-color: white;
+	color: #4CAF50;
+	border: 2px solid #4CAF50;
+	margin: 3px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #4CAF50;
+	color: white;
 }
